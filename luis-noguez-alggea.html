@@ -32,7 +32,7 @@
     pointer-events: none; z-index: 0;
   }
   .card {
-    position: relative; width: 100%; max-width: 400px;
+    position: relative; width: 100%; max-width: 480px;
     background: var(--card);
     border-radius: 20px; border: 1px solid var(--border);
     overflow: hidden; z-index: 1;
@@ -60,7 +60,7 @@
     background-size: 18px 18px; border-radius: 0 20px 0 0;
   }
   .logo-img {
-    width: 150px; object-fit: contain;
+    width: 170px; object-fit: contain;
     position: relative; z-index: 2;
     filter: drop-shadow(0 0 16px rgba(12,118,186,0.4));
   }
@@ -71,12 +71,12 @@
 
   .person { padding:22px 28px 16px; text-align:center; }
   .person-name {
-    font-size: 22px; font-weight: 700;
+    font-size: 26px; font-weight: 700;
     letter-spacing: 2px; color: var(--text);
     text-transform: uppercase; margin-bottom: 8px;
   }
   .person-role {
-    font-size: 11px; font-weight: 300;
+    font-size: 13px; font-weight: 300;
     letter-spacing: 2px; color: var(--cyan);
     text-transform: uppercase; line-height: 1.7;
   }
@@ -91,14 +91,14 @@
   .c-item:last-child { border-bottom: none; }
   .c-item:hover { background: rgba(12,118,186,0.09); }
   .c-icon {
-    width:34px; height:34px; border-radius:50%;
+    width:40px; height:40px; border-radius:50%;
     border:1px solid rgba(140,207,221,0.18);
     background:rgba(140,207,221,0.05);
     display:flex; align-items:center; justify-content:center; flex-shrink:0;
   }
-  .c-icon svg { width:15px; height:15px; }
-  .c-label { font-size:9px; font-weight:300; letter-spacing:2px; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:2px; }
-  .c-value  { font-size:13px; font-weight:400; color:var(--text); }
+  .c-icon svg { width:18px; height:18px; }
+  .c-label { font-size:11px; font-weight:300; letter-spacing:2px; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px; }
+  .c-value  { font-size:15px; font-weight:400; color:var(--text); }
   .c-item.whatsapp .c-icon { border-color: rgba(37,211,102,0.3); background: rgba(37,211,102,0.05); }
 
   .qr-row {
@@ -108,19 +108,19 @@
     display:flex; align-items:center; gap:16px;
   }
   .qr-box {
-    width:80px; height:80px; background:#fff; border-radius:7px;
+    width:90px; height:90px; background:#fff; border-radius:7px;
     display:flex; align-items:center; justify-content:center;
     flex-shrink:0; padding: 4px;
   }
-  .qr-box svg { width:72px; height:72px; }
+  .qr-box svg { width:82px; height:82px; }
   .qr-eyebrow { font-size:9px; letter-spacing:2px; color:var(--muted); text-transform:uppercase; font-weight:300; display:block; margin-bottom:4px; }
-  .qr-desc    { font-size:12px; color:var(--cyan); font-weight:300; line-height:1.5; }
+  .qr-desc    { font-size:14px; color:var(--cyan); font-weight:300; line-height:1.5; }
 
   .cta { padding: 0 20px 20px; }
   .btn-save {
-    display:block; width:100%; padding:13px 20px;
+    display:block; width:100%; padding:16px 20px;
     background: linear-gradient(120deg, var(--blue) 0%, var(--purple) 100%);
-    color:#fff; font-size:13px; font-weight:700; letter-spacing:4px;
+    color:#fff; font-size:15px; font-weight:700; letter-spacing:4px;
     text-transform:uppercase; text-align:center;
     border:none; border-radius:10px; cursor:pointer;
     text-decoration:none; transition:opacity 0.2s, transform 0.1s;
@@ -220,7 +220,7 @@
 </div>
 
 <script>
-  const vcard = "BEGIN:VCARD\r\nVERSION:3.0\r\nFN:Luis Noguez\r\nORG:ALGGEA\r\nTITLE:Operacion Administrativa y Gestion Tecnologica\r\nTEL;TYPE=WORK,VOICE:+525544523744\r\nEMAIL;TYPE=WORK:alggea7@gmail.com\r\nURL:https://www.alggea.com\r\nEND:VCARD";
+  const vcard = "BEGIN:VCARD\r\nVERSION:3.0\r\nFN:Luis Noguez\r\nN:Noguez;Luis;;;\r\nORG:ALGGEA\r\nTITLE:Operacion Administrativa y Gestion Tecnologica\r\nTEL;TYPE=WORK,VOICE:+525544523744\r\nEMAIL;TYPE=WORK:alggea7@gmail.com\r\nURL:https://www.alggea.com\r\nEND:VCARD";
   document.getElementById('btn-vcard').href = URL.createObjectURL(new Blob([vcard], { type: 'text/vcard' }));
 </script>
 </body>
